@@ -1,0 +1,21 @@
+def setup_drawing():
+    """
+    Set up the turtle environment for drawing the heart and animation.
+    """
+    turtle.bgcolor('black')
+    turtle.hideturtle()
+    turtle.penup()
+    turtle.goto(0, 0)
+
+def draw_heart_and_animate():
+    """
+    Draw the heart and animate it.
+    """
+    draw_heart()
+    write_name()
+    animate_heart()
+
+write_name()
+setup_drawing()
+draw_heart_and_animate()
+turtle.exitonclick()
